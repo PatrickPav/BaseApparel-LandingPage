@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0%;
+    padding: 0%;
+}
+.logo-header {
+    display: flex;
+    margin: 7% 9%;
+}
+.prof-pic {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    float: right;
+    z-index: 2;
+
+}
+.content-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+
+}
+#woman-desktop {
+    display: none;
+}
+#woman-mobile {
+    width: 100%;
+}
+
+.header-content {
+    padding: 20% 16% 0;
+    justify-content: center;
+    text-align: center;
+}
+.sub-content {
+    padding: 5% 15% 0;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+}
+.big-text {
+    font-size: 4em;
+    line-height: 1.1;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    color: hsl(0, 6%, 24%);
+    letter-spacing: 10px;
+    
+}
+span {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+    
+}
+p {
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 2em;
+    color: hsl(0, 36%, 70%);
+    font-size: 16px;
+}
+.inputField {
+    border: 1px solid hsl(0, 6%, 24%);
+    border-radius: 20px;
+    width: 100%;
+    padding: 15px 0 15px 20px;
+    margin: 10% 0 50%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+::placeholder {
+    color: hsl(0, 36%, 70%);
+}
+.arrow {
+    position: absolute;
+    display: flex;
+    padding: 3% 6%;
+    margin-top: 6.5%;
+    margin-left: 2px;
+    border-radius: 35%;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    cursor: pointer;
+
+}
+.input-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+@media screen and (min-width: 1200px) {
+    .content-container {
+        flex-direction: row-reverse;
+
+    }
+    .main-container {
+        padding-right: 15%;
+    }
+    .logo-header {
+        display: flex;
+        margin: 2% 9%;
+    }
+    .header-content {
+        padding-top: 7%;
+        text-align: left;
+    }
+    .big-text {
+        letter-spacing: 15px; 
+    }
+    .sub-content {
+            padding: 5% 26% 0 17%;
+            text-align: left;
+    }
+    #woman-desktop {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            display: block;
+    }
+    #woman-mobile {
+        display: none;
+    }
+    .main-container {
+        margin-right: 20%;
+    }
+    .arrow {
+        position: absolute;
+        display: flex;
+        padding: 18px 40px;
+        margin-top: 20px;
+        margin-left: 2px;
+        border-radius: 39%;
+        background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    
+    }
+    .inputField {
+        border: 1px solid hsl(0, 6%, 24%);
+        border-radius: 20px;
+        width: 100%;
+        padding: 15px 0 15px 20px;
+        margin: 5% 0 0;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 16px;
+    }
+
+}
